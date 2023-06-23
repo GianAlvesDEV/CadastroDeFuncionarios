@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Funcionários</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1 id = "tituloCadastro">Cadastro de Funcionários</h1>
+
+  <form id="cadastroForm">
+    <label for="nomeCompleto">Nome Completo:</label>
+    <input type="text" id="nomeCompleto" required>
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" required>
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" required>
+
+    <label for="dataDeNascimento">Data de Nascimento:</label>
+    <input type="date" id="dataDeNascimento" required>
+
+    <label for="rendaMensal">Renda Mensal:</label>
+    <input type="number" id="rendaMensal" required>
+
+    <label for="profissao">Profissão:</label>
+    <input type="text" id="profissao" required>
+
+    <label for="altura">Altura:</label>
+    <input type="number" id="altura" required>
+
+    <label for="peso">Peso:</label>
+    <input type="number" id="peso" required>
+
+    <label for="tipoSanguineo">Tipo Sanguíneo:</label>
+    <input type="text" id="tipoSanguineo" required>
+
+    <label for="banco">Banco:</label>
+    <input type="text" id="banco" required>
+
+    <label for="agencia">Agência:</label>
+    <input type="text" id="agencia" required>
+
+    <label for="contaCorrente">Conta Corrente:</label>
+    <input type="text" id="contaCorrente" required>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <p>Desconto de Imposto de Renda: <span id="desconto"></span></p>
+
+  <h1 id = "tituloBusca">Buscar Funcionário por CPF:</h1>
+
+  <!-- Campo de pesquisa -->
+  <input type="text" id="cpfPesquisa" placeholder="Digite o CPF">
+  
+  <!-- Botão de pesquisa -->
+  <button id="btnPesquisar">Pesquisar</button>
+  
+  <!-- Resultado da pesquisa -->
+  <div id="resultadoPesquisa">
+    <h2>Dados do Funcionário</h2>
+    <p><strong>Nome:</strong> <span id="resultadoNome"></span></p>
+    <p><strong>Endereço:</strong> <span id="resultadoEndereco"></span></p>
+    <p><strong>Data de Nascimento:</strong> <span id="resultadoData"></span></p>
+    <p><strong>Renda Mensal:</strong> <span id="resultadoRendaMensal"></span></p>
+    <p><strong>Profissao:</strong> <span id="resultadoProfissao"></span></p>
+    <p><strong>Altura:</strong> <span id="resultadoAltura"></span></p>
+    <p><strong>Peso:</strong> <span id="resultadoPeso"></span></p>
+    <p><strong>Tipo Sanguineo:</strong> <span id="resultadoTipoSanguineo"></span></p>
+    <p><strong>Banco:</strong> <span id="resultadoBanco"></span></p>
+    <p><strong>Agencia:</strong> <span id="resultadoAgencia"></span></p>
+    <p><strong>Conta Corrente:</strong> <span id="resultadoContaCorrente"></span></p>
+   
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

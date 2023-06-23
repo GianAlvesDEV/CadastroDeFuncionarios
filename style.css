@@ -1,0 +1,13 @@
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+
